@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Write a description of class Club here.
@@ -7,27 +9,28 @@
  */
 public class Club
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private ArrayList<Membership> memberList;
 
     /**
      * Constructor for objects of class Club
      */
     public Club()
     {
-        // initialise instance variables
-        x = 0;
+        
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Method numberOfMembers
+     * 
+     * return the number of members in the ArraList clubList
      */
-    public int sampleMethod(int y)
+    public int numbeOfMembers()
     {
-        // put your code here
-        return x + y;
+        return memberList.size();
+    }
+    
+    public void Join(Membership member)
+    {
+        memberList.add(member);
     }
 }
